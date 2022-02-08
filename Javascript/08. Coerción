@@ -1,0 +1,14 @@
+## 08. Coerción ## {{{
+    Coerción es la forma en la que podemos cambiar un tipo de valor a otro, existen dos tipos:
+
+    - Implícita: Cuando el lenguaje nos ayuda a cambiar el tipo de valor. [4 + "7"] // 47(str)
+    - Explícita: Cuando obligamos a que el tipo de valor cambie [String(), Number(), etc.]
+
+    Comandos útiles:
+        parseInt("123hui") // 123
+            Analiza una cadena desde el primer caracter, devuelve únicamente los digitos.
+
+        Number("123hui") // NaN
+            Convierte toda la cadena en número, si no lo logra nos dará un NAN.
+            
+}}}

@@ -1,0 +1,24 @@
+## 12. Tags y versiones ## {{{
+    git tag -a v0.1 -m "<mensaje commit>" <version>:
+        Crea un tag para <version>.
+
+    git show-ref --tags:
+        Muestra a qué commits está conectado un tag.
+
+    git push origin --tags:
+        Empuja tags creadas al remoto.
+
+    git tag:
+        Mostrar tags.
+
+    git tag -d <tag>:
+        Eliminar tag.
+
+    git push origin :refs/tags/<tag>:
+        Elimina tag completamente del remoto.
+
+    * Mejor git log (alias como slog):
+    "log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold
+    blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim
+    white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
+}}}

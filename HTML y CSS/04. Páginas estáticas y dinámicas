@@ -1,0 +1,11 @@
+## 04. Páginas estáticas y dinámicas ## {{{
+    * Estática: Estos sítios mantienen su información constante y estática. No se
+    actualiza con la interacción del usuario (landing pages, blogs, etc.) Iguales
+    para todos.
+
+    * Dinámica (webapps): Los sitios dinámicos actualizan su información según la
+    interacción del usuario. Dependen de una base de datos, de donde se extrae e ingresa
+    información. Diferentes según el usuario.
+
+    Básicamente las dinámicas cambian según bases de datos.
+}}}

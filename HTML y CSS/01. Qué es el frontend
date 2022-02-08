@@ -1,0 +1,54 @@
+## 01. Qué es el Frontend ## {{{
+    El Frontend es el desarrollador frente al cliente (navegador), se consideran las animaciones,
+    estilos, etc. que se visualizan a través del navegador.
+
+    * Tecnologías:
+    Estándares: HTML, CSS, JS.
+    Frameworks CSS: Bootstrap, etc.
+    Frameworks JS: Reactjs, Vuejs.
+    Preprocesadores CSS: less, stylus, sass.
+    Compiladores/empaquetadores de JS: Babel, webpack.
+
+
+    * Herramientas comúnes Frontend Developer
+    Mediaqueri: Algunas ideas sobre como deberíamos implementar el diseño responsive en
+    nuestro sitio.
+    https://mediaqueri.es/
+
+    Coolors: Paletas de colores.
+    https://coolors.co/palettes/trending
+
+    Unsplash: Imagenes gratis (Da los créditos a los fotógrafos 😉).
+    https://unsplash.com/
+
+    FontPair: Ver cuales fuentes puedes combinar. Y obviamente Google Fonts para obtener
+    esas fuentes.
+    https://fontpair.co/
+
+    Icons8: Iconos, vectores, música y algunos recursos más…
+    https://icons8.com/
+
+
+    * Documentaciones
+    CSS
+    https://cssreference.io/
+
+    HTML
+    https://htmlreference.io/
+
+    Browserdiet: Optimizar sitios web (Perder peso en la web 😛). Recuerda que Platzi tiene
+    también un curso de Web Performance.
+    https://browserdiet.com/es/
+
+    WCAG: Guía para mejorar la accesibilidad de nuestro sitio. Recuerda que Platzi tiene el
+    curso de accesibilidad web.
+    http://www.sidar.org/traducciones/wcag20/es/
+
+    * Juegos
+    Grid Layout:
+    https://cssgridgarden.com/#es
+
+    Flexbox:
+    https://flexboxfroggy.com/#es
+
+}}}

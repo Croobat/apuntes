@@ -1,0 +1,26 @@
+## 6. Regresar en el tiempo ## {{{
+    git reset <commit> --soft:
+        Volvemos al commit indicado, sin borrar commits usados anteriormente.
+
+    git reset <commit> --hard:
+        Volvemos al commit, borrando todos los commits usandos antes de este.
+
+    git checkout <commit> <file>:
+        Volvemos al commit indicado, sin cambiar nada en staging.
+
+    git checkout master <file>:
+        Volvemos al archivo de antes del primer checkout sin cambiar staging.
+
+
+    git reset vs. git rm
+    
+    - Git rm se debe utilizar con un flag, sea --cached or --force, para que git sepa
+    si solo queremos que sean untracked o eliminarlos definitivamente.
+    
+    - Git reset es similar a git checkout, sin embargo git checkout permite volver al
+    futuro después, git reset lo elimina.
+    Se recomienda usar --soft en vez de --hard siempre que se pueda pues ese al
+    menos mantiene los cambios en staging.
+
+    - Por último, git reset HEAD, saca los archivos de staging SIN borrarlos.
+}}}

@@ -1,0 +1,24 @@
+## 10. Github ## {{{
+    git merge <rama> --allow-unrelated-histories:
+        Obliga a fusionar <rama> con la actual.
+
+    git remote add origin <url>:
+        Conecta un repositorio en <url> y da un origen de repo remoto a nuestro repo local.
+
+    git remote -v:
+        Lista conexiones existentes. Links de fetch y push.
+
+    git remote remove origin:
+        Elimina conexión con el remoto.
+
+    git push/pull origin main:
+        Envía/recibe la rama main al remoto.
+
+    git pull origin main --allow-unrelated-histories:
+        Obliga a fusionar la rama de origin con la actual.
+
+        * Working dir: Cambios untracked/ustaged, fuera de git o desactualizados.
+        * Staging area: Archivos en git, pero aún no guardados en el repo local.
+        * Git repository: Archivos tracked y ya dentro de git, ya actualizados.
+        * Remote: Archivos ya en el repositorio remoto, que se pueden trabajar desde servidores.
+}}}

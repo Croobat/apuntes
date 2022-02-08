@@ -1,0 +1,9 @@
+## 14. Múltiples colaboradores ## {{{
+    Por defecto cualquiera puede clonar y descargar tu proyecto desde GitHub.
+    Pero no pueden crear commits ni ramas.
+
+    Para agregar colaboradores ir a la configuración del repo, Manage access
+    e Invitar a un colaborador. El colaborador debe aceptar el correo de invitación.
+
+    Repo -> Settings -> Collaborators  para ver a todos los colaboradores activos.
+}}}

@@ -1,0 +1,20 @@
+## 27. Recursos ## {{{
+    git shortlog -sn --all --no-merges (alias stats):
+        Muestra los commits (sin merges) de cada integrante.
+
+    git blame -c <file>:
+        Muestra qué usuarios cambiaron qué lineas de código.
+        ie. git blame file -L 35,53
+            Muestra qué usuarios cambiaron las lineas 35-53.
+
+    git blame --help para más información.
+
+    git branch -r:
+        Muestra las ramas remotas.
+
+    git branch -a:
+        Muestra todas las ramas locales y remotas.
+
+    En el propio GitHub, en insights se muestran gráficas
+    especiales de interés para el proyecto de trabajo.
+}}}

@@ -1,0 +1,17 @@
+## 13. Ramas en GitHub ## {{{
+    git branch:
+        Revisar ramas creadas.
+
+    git show-branch --all:
+        Revisa las ramas creadas con su ubicación (remoto o local), además muestra la
+        historia más reciente de las ramas y sus commits.
+
+    gitk:
+        Muestra ramas en interfaz gráfica.
+
+    git branch <rama_nueva>:
+        Agrega <rama_nueva> al repositorio.
+
+    git push origin <rama_nueva>:
+        Empuja <rama_nueva> a el remoto.
+}}}

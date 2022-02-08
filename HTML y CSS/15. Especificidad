@@ -1,0 +1,27 @@
+## 9. Especificidad ## {{{
+    CSS carga estilos según un orden de importancia.
+        1. Hoja de estilos del cliente (navegador)
+        2. Declaraciones de estilos del autor (nuestro .css)
+        3. Declaraciones importantes del autor (important)
+
+    Dado que CSS es de cascada, el orden de las reglas importa, si dos estilos tienen igual
+    importancia se aplicará el último correspondiente al elemento.
+
+Especificidad
+=    x 0 0 0 0   !important (poco recomendado)
++      x 0 0 0   Estilos en línea (inline styles, inyectados con el atributo style en html)
++        x 0 0   #id
++          x 0   Clases, atributos y pseudoclases
++            x   Elementos y pseudo elementos (tags)
++            0   selector universal (*)
+---------------
+
+    Ejemplo:
+    100     #id
+  +   1     h1
+  +   1     ::first-letter
+  ------
+    102 de especificidad
+
+    El estilo que se aplicará será el más específico.
+     }}}

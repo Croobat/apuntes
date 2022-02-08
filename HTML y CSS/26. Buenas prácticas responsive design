@@ -1,0 +1,10 @@
+## 26. Buenas prácticas responsive design ## {{{
+    - Separar siempre los archivos de CSS por breakpoint.
+        - mobile.css / style.css
+        - tablet.css
+        - desktop.css
+
+    - El ancho mínimo que debería preocupar para mobile es 320px.
+    - El ancho mínimo para tablet se recomienda en ~600px u ~800px.
+    - No es ideal tener más de 3-4 breakpoints.
+}}}

@@ -1,0 +1,10 @@
+## 07. Etiquetas ## {{{
+    Una etiqueta es un elemento de html, básicamente es una cajita. Estas tienen:
+
+    <a href="google.com"> Google </a>
+    
+    - Etiqueta de apertura (opening tag) <a>
+    - Atributo  href="google.com"
+    - Contenido Google
+    - Etiqueta de cierre </a>
+}}}

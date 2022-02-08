@@ -1,0 +1,11 @@
+## 14. Herencia ## {{{
+    La herencia es la posibilidad de pasar un valor del padre al hijo.
+    
+        - Inherit: La propiedad a la que se lo apliquemos obtendrá la que tenga su padre.
+        Si el padre no tiene definido ese valor el navegador seguirá el DOM hasta encontrar
+        un elemento, si no encuentra se aplica el valor por defecto.
+
+        - Initial: Dar el valor inicial y predefinido por el navegador en cuestión.
+
+        - Upset: Aplica inherit, si no encuentra aplica initial.
+}}}

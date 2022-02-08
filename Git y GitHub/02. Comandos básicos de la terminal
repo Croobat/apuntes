@@ -1,0 +1,11 @@
+## 2. Comandos basicos de la terminal ## {{{
+    pwd             Print working directory
+    cd              Change directory
+    mkdir           Make directory
+    ls              List files
+    history         Historial de comandos utilizados
+    touch           Change modified date file/Create new text file
+    cat             Concatenar (escencialmente imprime texto del archivo en terminal)
+    echo            Imprime en la terminal
+    rm              Remove file
+}}}

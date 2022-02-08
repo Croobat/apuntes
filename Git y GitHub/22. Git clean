@@ -1,0 +1,14 @@
+## 22. Git clean ## {{{
+    git clean --dry-run:
+        Ejecuta git clean como un simulacro de borrado, simula lo que se va a borrar
+        sin borrarlo.
+
+    git clean -f:
+        Elimina los archivos sin seguimiento del directorio actual.
+
+    git clean -d:
+        Esta flag elimina también los directorios.
+
+    git clean -x:
+        Indica a git que también incluya los archivos ignorados.
+}}}

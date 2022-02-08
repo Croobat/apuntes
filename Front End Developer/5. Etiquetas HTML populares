@@ -1,0 +1,11 @@
+## 5. Etiquetas HTML populares ## {{{
+    Layout: Header, nav, section, article, aside, footer.
+    Link: a.
+    Text: h1...h6, p, span.
+    Media: img, svg, iframe, video.
+    Form: form, input, label, button.
+    List: ul, li, ol.
+    Como ya se vio, algunas etiquetas tienen significado semántico, otras no <b></b> y 
+    <strong></strong> ambas ponen en negritas pero solo la última es semántica, igual
+    con <i></i> y <em></em> para cursivas, <br> hace salto de línea.
+     }}}

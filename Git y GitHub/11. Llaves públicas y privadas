@@ -1,0 +1,34 @@
+## 11. Llaves públicas y privadas ## {{{
+    git remote -v:
+        Verificar existencia de origen remoto.
+
+    git remote set-url origin <SSH link>:
+        Vincular remoto con desde local.
+
+    git pull/push origin master:
+        Fusiona una copia del master remoto con el local (o al revés).
+
+    También conocido con cifrado asimétrico de un solo camino. Las llaves se crean con un
+    proceso algorítmico y están vinculadas matemáticamente. Las llaves públicas y privadas
+    son la base de todo intercambio seguro de mensajes en internet.
+
+    La llave pública se puede entregar a cualquier persona, la privada nunca se comparte
+    con nadie.
+
+    Para enviar un mensaje a María, se cifra el mensaje con la llave pública de María,
+    luego la FIRMA con su propia llave privada. María confirma que el mensaje es de Pedro
+    usando su llave pública y luego lo descifra con su propia llave privada.
+
+    * Generar una nueva llave SSH:
+        ssh-keygen -t rsa -b 4096 -C "youremail@example.com"
+
+    * Comprobar proceso y agregarlo:
+        eval $(ssh-agent - s)
+        ssh-add ~/.ssh/id_rsa
+    * Agregar llave:
+        ssh-add -K ~/.ssh/id_rsa
+
+    * Conectar llave eh GitHub:
+        Copiar llave pública.
+        Github -> Settings -> SSH and GPG keys -> ir a repositorios -> clonar con ssh
+}}}

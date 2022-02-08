@@ -1,0 +1,21 @@
+## 18. Medidas relativas y absolutas ## {{{
+ - Medidas absolutas: el valor de este no cambia y siempre sera el mismo asi la pagina cambie
+ su tamaño, las medidas absolutas son:
+    mm = milimetros
+    cm = centimetros
+    in = pulgada
+    pc = picas
+    px = pixel
+
+ - Medidas relativas: estas medidas heredan el tamaño o se basan en algun tamaño que se haya
+ seleccionado y el valor ira cambiando segun si la pagina cambia de tamaño, las medidas
+ relativas son :
+    % (porcentaje)
+    em (element)
+    rem (root element)
+    max/min-width/height
+    viewport width/height
+
+    Nota: em y rem toman el tamaño de fuente del padre directo (si el padre mide 20px 2em
+    medirán 40px), rem toma de la etiqueta raíz.
+}}}

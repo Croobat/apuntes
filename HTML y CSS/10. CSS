@@ -1,0 +1,9 @@
+## 10. CSS ## {{{
+    - CSS (Cascading Style Sheets): Estilo de la página, monta la estética del contenido.
+
+    Los estilos se pueden agregar ya sea:
+    * Dentro de una etiqueta <style> en el <head> (bueno si se van a generar componentes con
+    el contenido o para pocos estilos).
+    * Directamente con el atributo style en un elemento.
+    * Vinculando un stylesheet con <link> en el <head> (mejor práctica).
+}}}

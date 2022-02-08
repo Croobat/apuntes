@@ -1,0 +1,25 @@
+## 4. Branches y cómo funciona un merge ## {{{
+    git checkout:
+        Cambiar de rama (también se puede usar para regresar a un commit anterior).
+
+    git merge:
+        Fusionar ramas.
+
+    git status:
+        Muestra rama actual, versión y si hay commits por enviar.
+
+    git branch <rama>:
+        Crea una nueva branch llamada <rama>.
+
+    Al crear un repositorio se inicializa la rama master/main.
+
+    De manera opcional, el flujo gitflow recomienda hacer todos los cambios en una
+    rama development.
+    Adicionalmente se crean ramas feature UNICAMENTE en la rama develop.
+
+    Las ramas hotfix son para arreglos menores y son las únicas que pueden ir 
+    directamente a a main.
+
+    Para unir el progreso de develop a main se crea una rama release 
+    (con un respectivo tag), una vez unida a main y develop se borra.
+}}}

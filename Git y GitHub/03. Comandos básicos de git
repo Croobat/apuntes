@@ -1,0 +1,38 @@
+## 3. Comandos básicos de git ## {{{
+    git init:
+        Inicializa un repositorio git.
+
+    git add <archivo>:
+        Agrega el archivo en cuestión al seguimiento de git.
+        Es cuando la información entra a escena (stage area).
+
+    git commit -m <archivo>:
+        Envía los cambios del archivo a la base de datos del sistema de control de versiones.
+        Es una captura de los cambios realizados en el stage area.
+
+    git add .:
+        Se agregan al stage todos los archivos que hayan cambiado.
+
+    git rm <archivo>:
+        Elimina un archivo añadido, sin eliminar su historial del sistema de versiones.
+        -- cached Elimina archivos de staging y el próximo commit pero los mantiene en disco.
+        -- force Elimina los archivos de git y del disco duro.
+
+    git status:
+        Muestra qué archivos no han sido agregados al stage.
+
+    git show:
+        Muestra qué, cuándo y quién ha hecho cambios.
+
+    git log <archivo>:
+        Muestra todos los registros de un archivo.
+
+    git push/pull:
+        Envía o recibe los cambios del repositorio remoto.
+
+    git config:
+        Muestra las configuraciones de git,
+        -- list muestra la config por defecto.
+        -- show-origin muestra las config guardadas y su ubicación.
+        -- global (user.name, user.email, etc.) se usa para asignar configuraciones globales.
+}}}

@@ -1,0 +1,21 @@
+## 9. Cascada y especificidad ## {{{
+    Dado que CSS es de cascada, el orden de las reglas importa, el estilo que se aplicará
+    es el último correspondiente al elemento.
+
+Especificidad
+=    x 0 0 0 0   !important
++      x 0 0 0   Estilos en línea
++        x 0 0   #id
++          x 0   Clases, atributos y pseudoclases
++            x   Elementos y pseudo elementos
++            0   selector universal
+
+    Ejemplo:
+    100     #id
+  +   1     h1
+  +   1     ::first-letter
+  ------
+    102 de especificidad
+
+    El estilo que se aplicará será el más específico.
+     }}}

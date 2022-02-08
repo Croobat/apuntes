@@ -1,0 +1,11 @@
+## 23. Git cherry-pick ## {{{
+    git cherry-pick <HASH>:
+        Desde la rama que se quiera, agrega el commit indicado a la historia (sin necesidad
+        de merge).
+        -e (permite editar el mensaje del commit original)
+        -n (trae los cambios son ejecutar un commit)
+
+    Cherry-pick permite tomar uno o varios commits de otra rama sin necesidad de hacer
+    el merge completo. Se puede aplicar más de un cherry-pick a la vez.
+    El problema de cherry-pick es que puede generar duplicaciones de confirmaciones.
+}}}

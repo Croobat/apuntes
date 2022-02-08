@@ -1,0 +1,138 @@
+Branch git no es etiqueta agregas estado del repo
+
+git stash no se guarda en el disco duro en nuevo commit
+
+cherrypick no se deberíá usar al traer un archivo viejo de commit anterior
+
+github gitlab no llaman pull request a los merge
+
+la dif entre git rm y git reset head n es que head saca archivos del repo y rm del staging
+
+¿La terminal ideal para usar Git en Windows es?
+
+Git Bash o una terminal derivada de Linux
+
+2.
+¿Qué guarda Git?
+Los cambios de los archivos de un proyecto.
+
+3.
+En un commit, los mensajes del commit son:
+
+Importantes y obligatorios.
+
+4.
+Los cambios a un archivo que están en “staging” están en:
+
+Un área temporal en memoria antes de llegar al repositorio.
+
+5.
+¿Qué es un branch o una rama en Git?
+Una etiqueta que le agregas a un estado del repositorio.
+
+REPASAR CLASE 6. Con checkout puedo: Ver todos los archivos de mi proyecto como los dejé en otras ramas. 7. Un repositorio remoto y un repositorio local:
+
+Tienen ramas similares dependiendo de cuáles haya enviado entre uno y otro.
+
+8.
+¿El HEAD en una rama es?
+
+El apuntador al estado actual del repositorio basado en la rama en la que estoy trabajando.
+
+9.
+¿Cuándo debería hacer un merge?
+
+Cuando quiero fusionar los cambios de una rama con otra.
+
+10.
+Cuando hay un conflicto entre archivos lo mejor es:
+
+Analizar los conflictos tal como los reportó Git y elegir los cambios finales, luego commit.
+
+11.
+¿GitHub es?
+
+Un sistema online de manejo de repositorios de Git.
+
+12.
+¿Las llaves públicas son?
+
+Fáciles de compartir y sus mensajes imposibles de descifrar.
+
+13.
+Para transmitir cambios seguros entre tu repositorio local y GitHub, ¿qué se recomienda?
+
+Usar una llave SSH.
+
+14.
+Se crean dos archivos cuando creas una llave pública y privada para SSH, ¿cuál es la extensión de la llave privada?
+
+Ninguna extensión
+15.
+¿Qué crean los tags en Git?
+
+Versiones descargables y puntos únicos en una rama de un repositorio.
+
+16.
+¿Puedo crear ramas en GitHub que no tenga en mi repositorio local?
+
+Sí, tú decides si traer esas ramas a tu repositorio local.
+17.
+El dueño de un repositorio al ver un pull request puede:
+
+Editarlo, aceptarlo, darle merge, comentarlo para pedir cambios.
+
+18.
+Si ya hiciste el desafío de “Hazme un pull request,” ¿dentro de cuál etiqueta tenías que agregar el cambio?
+
+<divid="post">
+19.
+Cuando usas git stash, los cambios que “guardas” temporalmente se guardan en:
+
+Disco duro, en un nuevo commit.
+
+
+20.
+¿Cuándo deberías usar cherry-pick?
+
+Al traer un archivo viejo de un commit anterior, pero nada más.
+
+
+21.
+¿Con amend puedo?
+
+Corregir los mensajes de un commit que hice mal sin que quede en la historia del repositorio.
+
+22.
+Si usas:
+
+git config --global alias.platzi "shortlog"
+
+¿Cómo invocar ese comando?
+
+git platzi
+23.
+Es mejor aprender a manejar Git con la terminal antes de hacerlo con herramientas visuales como Gitk porque:
+
+Debemos aprender Git con sus comandos de la terminal para resolver problemas o conflictos más avanzados. Gitk funciona bien, pero no nos permite realizar operaciones tan complejas.
+
+24.
+¿Cómo llaman GitHub y GitLab a los "merges" (propuestas de cambios desde otra rama o repositorio)?
+Pull Request
+
+25. ¿Puedes conectar tu repositorio local con más de un repositorio remoto? Verdadero 26. Estás en la rama master y quieres mandar los últimos cambios que guardaste con git stash a la rama retomando-los-cambios (la rama no ha sido creada aún). ¿Cuál de las siguientes soluciones es incorrecta?
+git stash apply retomando-los-cambios
+27.
+¿Cuál es la diferencia entre git rm y git reset HEAD?
+git reset head saca los archivos del repositorio. git rm saca los archivos de Staging.
+28.
+Por defecto, GitHub usa la rama main como la rama principal. ¿Podemos cambiar la rama principal?
+
+Verdadero
+29.
+¿Para qué sirve GitHub Pages?
+Es un servicio de GitHub que nos permite publicar nuestros repositorios en internet (por ejemplo, nombre.github.io o nombre.github.io/proyecto).
+30.
+El Jefe Freddy despidió a Anita y no piensa volver a contratarla. ¿Qué debe hacer Anita para seguir haciendo contribuciones a los proyectos públicos de Platzi?
+
+Crear un Fork del proyecto y enviar Pull Request al proyecto original.

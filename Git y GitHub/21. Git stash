@@ -1,0 +1,40 @@
+## 21. Git stash ## {{{
+    git stash:
+        Guarda el trabajo actual del staging en una lista diseñada para ser temporal
+        llamada stash.
+
+    git stash save "<mensaje identificador>":
+        Guarda el stash con un mensaje identificador.
+
+    git stash -u:
+        Crea un stash con todos los archivos (añadiendo los creados untracked).
+
+    git stash list:
+        Lista los stash.
+
+    git stash drop:
+        Elimina el stash más reciente (num_stash=0).
+
+    git stash drop stash@(num_stash):
+        Elimina el stash especificado.
+
+    git stash apply:
+        Aplica el stash más reciente.
+
+    git stash pop:
+        Aplica el stash más reciente y lo elimina.
+
+    git stash branch <rama>:
+        Aplica el stash a una rama nueva llamada <rama>.
+
+    git stash clear:
+        Elimina todos los stash.
+
+    El stashed permite guardar cambios para después, es una lista de estados que guarda
+    algunos cambios hechos en staging para poder cambiar de rama sin perder trabajo que
+    aún no se ha commiteado.
+
+    Es bueno para cuando queremos cambiar de rama pero tenemos cambios sin commitear,
+    nos permite tener un buffer donde guardar nuestros cambios parciales. Sigue el método
+    LIFO (Last In First Out).
+}}}

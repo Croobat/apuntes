@@ -1,0 +1,17 @@
+## 12. Reglas de CSS ## {{{
+    Selector {
+        Property: property value;
+        \_______________________/
+                Declaration
+    }
+
+    p {
+        color: red;
+    }
+
+    #id
+    . clase
+    : estado
+    [] atributo
+    * todos
+}}}

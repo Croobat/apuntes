@@ -1,0 +1,44 @@
+## 7. Selectores básicos y combinadores ## {{{
+    Selectores básicos:
+     - De tipo:
+        Directamente para etiquetas, recomendado solo para debugging.
+        <etiqueta>
+
+     - De clase:
+        Se especifica una clase para determinado elemento.
+        .elemento
+
+     - De id:
+         Se especifica un id para determinado elemento.
+        #id-de-elemento
+
+     - De Atributo:
+        Se puede estilizar determinado atributo de un elemento.
+        a[href="..."]{...}
+
+     - Universal:
+         Para todo el documento, tiene baja prioridad.
+         * {...}
+
+    Selectores combinadores:
+    - Descendientes:
+        El selector más a la izquierda es el padre, el resto son hijos.
+        El ejemplo indica un selector para las clases "rojo" pero solo si están en un div.
+        div .rojo {}
+
+    - Hijo directo:
+        Similar al descendiente pero debe ser hijo directo, no vale nieto, bisnieto, etc.
+        div > .rojo {}
+
+    - Elemento adyacente:
+        Selecciona elementos bajo la primera etiqueta.
+        El ejemplo indicca un selector para un div que esté bajo otro div
+        div + div {}
+
+    - General de hermanos:
+        Similar al adyacente pero para todos los selectores en el mismo nivel.
+        p ~ p {}
+
+    Los selectores se pueden combinar:
+    div .rojo ~ .azul > p {}
+     }}}

@@ -1,0 +1,29 @@
+## 16. Forks ## {{{
+    El fork es una característica única de GitHub donde se crea una copia exacta del estado
+    actual del repo en GitHub, éste repo servirá como otro origen y se podrá usar como otro
+    git cualquiera.
+
+    Un fork es una bifurcación del repositorio, comienza con una historia común pero se
+    bifurca, variando los cambios, para estar al día un colaborador tendrá que estar
+    actualizando su fork. Los forks son vitales para el workflow de proyectos FOSS.
+
+    Al trabajar en un proyecto que está en diferentes remotos (normalmente por un fork)
+    es muy probable querer trabajar con ambos, para eso se puede crear un remoto adicional.
+
+    git remote add <nombre_remoto>
+    <url_remoto>
+
+    ie. git remote upstream
+    https://github.com/freddier/hyperblog
+    
+    Al crear un remoto adicional podremos hacer pull desde el nuevo origen (y con permisos
+    también fetch y push).
+
+    git pull <remoto> <rama>
+    
+    ie. git pull upstream master
+    git push origin master
+
+    Este pull traerá cambios del remoto, estando al día con el proyecto, por lo que el
+    workflow ahora es hacer pull desde upstream y push a origin para hacer el PR.
+    }}}

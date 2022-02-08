@@ -1,0 +1,27 @@
+## 15. Pull requests ## {{{
+    git checkout -b <rama-fix>
+    git commit -am '<rama-fix>'
+    git push origin <rama-fix>
+    * Pull request en GH.
+    * Revisión de código (y feedback de ser necesario)
+    * Corrección de código
+    * Aceptar cambios
+    * Merge a master desde GH
+
+    (Al modificar la rama también se modifica el PR)
+
+    En un entorno profesional normalmente se bloquea la rama master, y para enviar código
+    dicha rama se pasa por un code review, tras su aprobación se unen códigos con un
+    pull request (GitHub/Bitbucket) o merge request (gitlab). Esto permite a extraños
+    apoyar con el desarrollo del proyecto.
+
+    Las pruebas de un código se suelen hacer en un staging server.
+
+    Development server -> Staging server -> Production server.
+
+    Un pull request es el proceso de validación para fusionar una rama con otra. Se podría
+    considerar un control de calidad.
+
+    Esto suele hacerlo el líder del equipo o un perfil conocido como DevOps, que coordina
+    los roles de trabajo.
+}}}

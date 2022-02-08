@@ -1,0 +1,13 @@
+## 20. Rebase ## {{{
+    git checkout feature
+    git rebase master
+
+    Primero se hace rebase a la rama que va a desaparacer.
+    Luego se hace rebase a la rama principal.
+
+    Rebase es un comando que reescribe la historia del repositorio, solo se recomienda
+    usarlo de manera local. Transplanta toda la bifurcación de la rama y la pega en la
+    rama maestra. Es una forma de hacer cambios silenciosos a otras ramas. El problema
+    es que no queda historia y para cambios muy lejanos en el tiempo puede crear
+    montones de conflictos.
+}}}

@@ -1,0 +1,7 @@
+## 22. Variables ## {{{
+    Las variables en CSS deben colocarse dentro de un selector, normalmente se usa :root
+    para que la variable sea global. La variable debe comenzar con 2 guiones (--) y es
+    case sensitive.
+
+    var(--variable-name)
+}}}

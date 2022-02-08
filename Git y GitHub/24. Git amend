@@ -1,0 +1,13 @@
+## 24. Git amend ## {{{
+    git commit --amend:
+        Modifica la confirmación más reciente. Permite cambiar la confirmación del
+        mensaje, o cambiar la parte instantánea que acabas de agregar sumando,
+        cambiando y/o removiendo archivos.
+        -m (agregar mensaje)
+        --no-edit (Permite hacer las correcciones en la confirmación sin modificar
+        el mensaje del commit original)
+
+    Con git ammend se sustituye el commit por completo, creando una entidad nueva con
+    su propia referencia. No se recomienda modificar un commit ya enviado a un repo,
+    pero de ser necesario se puede usar la bandera --force a git push.
+}}}

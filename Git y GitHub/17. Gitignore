@@ -1,0 +1,8 @@
+## 17. Gitignore ## {{{
+    En la raíz del repositorio se puede crear un archivo de texto llamado .gitignore, donde
+    se pueden agregar los archivos que no se quieren trackear por git.
+
+    *.jpg       -> Ignora todos los jpg del proyecto.
+
+    Los binarios deberían ir en un content delivery network (o ftp, o rsync, etc.).
+}}}

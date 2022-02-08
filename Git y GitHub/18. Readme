@@ -1,0 +1,18 @@
+## 18. README.md ## {{{
+    El README.md es la página principal del repositorio, da un resumen del proyecto.
+    Se escribe en lenguaje Markdown.
+
+    * Para qué es el proyecto.
+    * Cómo se configura e instala.
+    * Ejemplo de uso.
+    * Licencia del código del proyecto.
+    * Cómo participar en el desarrollo.
+
+    Para agregar títulos en markdown se usan # ## ###.
+    Un buen editor de readmes es Editor.md en https://pandao.github.io.
+
+    Siempre es una muy buena práctica tener un readme bien redactado.
+    
+    Otro archivo que github reconoce es CONTRIBUTING. Que saltará al intentar enviar un PR,
+    ayuda a ver las directrices y cosas a considerar para el PR.
+}}}

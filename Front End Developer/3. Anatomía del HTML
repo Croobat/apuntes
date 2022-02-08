@@ -1,0 +1,7 @@
+## 3. Anatomía del HTML ## {{{
+    Etiqueta: Un elemento de básico de HTML, estas pueden tener atributos.
+    <elemento atributo1="x" atributo2="y"> contenido </cierre de elemento>
+
+    *Nota: Es importante agregar la etiqueta <meta charset="UTF-8"> en el head
+    del HTML.
+     }}}

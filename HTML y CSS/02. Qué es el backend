@@ -1,0 +1,27 @@
+## 02. Qué es el backend ## {{{
+    El backend es el desarrollador que trabaja del lado del servidor, maneja toda la
+    lógica al momento que el navegador hace una petición al pedirle una instrucción y
+    busca en el servidor.
+
+    Contrario al front, el back no tiene unos cuantos estándares, tiene más tecnologías,
+    lenguajes de programación y programas.
+    Ejemplos son nodejs, python, php, go, ruby, java y .net.
+
+    Estos lenguajes tanbién tienen sus frameworks como son:
+        Django (python)
+        Laravel (php)
+        Rails (ruby)
+        Express (javascript/node)
+        Spring (java)
+
+    Un backend también debe ver dónde subir, o hacer deploy de su aplicación. Aquí pueden
+    involucrarse los devops pero el backend también debe entender la conexión con el
+    front.
+    Ejemplos son google cloud, digitalocean, aws o heroku.
+
+    El backend también trabaja con las bases de datos, para esto existen diferentes bases
+    de datos:
+        MongoDB (no relacional)
+        MySQL (relacional)
+        PostgreSQL
+}}}

@@ -1,0 +1,6 @@
+## 6. Anatomía de CSS ## {{{
+    Con CCS podemos asignar propiedades a determinado selector.
+    selector {
+        propiedad: valor;
+    }
+     }}}

@@ -1,0 +1,18 @@
+## 08. Tipos de imágenes ## {{{
+    Hay dos tipos de imágenes, lossy y lossless según si tienen pérdida.
+
+    *Lossless:
+        gif: Hasta 256 colores, animaciones simples.
+        png-8: Hasta 256 colores, transparencia, sin animación, bueno para íconos.
+        png-24: Colores ilimitados, imagenes fijas de más colores y transparencia.
+                (fondo manipulable).
+
+    *Lossy:
+        jpg: Millones de colores, imagenes fijas o fotografía.
+        svg: Colores ilimitados, vectorial, bueno para gráficos y logotipos de alta res.
+
+
+    Páginas útiles (imágenes y logos de uso gratuito):
+    Flaticon: https://www.flaticon.com/
+    Freepik: https://www.freepik.es/
+}}}

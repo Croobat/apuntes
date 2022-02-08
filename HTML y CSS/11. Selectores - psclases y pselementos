@@ -1,0 +1,12 @@
+## 8. Tipos de selectores: pseudoclases y pseudoelementos ## {{{
+    Las pseudoclases indican estados de un elemento (al interactuar con el usuario), se 
+    idican con un colon.
+        :active, :focus, :hover, :nth-child(n), :in-range, ":out-of-range"
+
+    Los pseudoelementos son elementos especiales, no necesariamente escritos desde html.
+        ::after, ::before, ::first-letter ::placeholder
+
+    NOTA: Una metodología recomendada para nombrar clases en CSS es BEM, dónde separamos
+    bloque, elemento y modificador.
+        BLOQUE__ELEMENTO--MODIFICADOR
+     }}}

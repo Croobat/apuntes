@@ -1,0 +1,20 @@
+## 12. Posicionamiento en CSS ## {{{
+    El posicionamiento ayuda a ubicar elementos.
+        - Static: Valor predeterminado, aquí no podemos usar propiedades left, top, right
+        y bottom.
+        - Absolute: El elemento sale de su lugar y el navegador reacomoda, poniendo otro
+        elemento en el lugar de de posición absolute.
+        - Relative: El elemento mantiene su lugar , pero se puede reposicionar a donde se
+        requiera, se usa como contenedor para que elementos absolute lo usen como referencia.
+        - Fixed: Este elemento nos seguirá a todos lados una vez nos topemos con el.
+        - Sticky: Similar al fixed, pero al encontrar otro elemento en su posición este la
+        da lugar a ese elemento.
+        - Initial: Vuelve el position de un elemento a como estaba originalmente.
+        - Inherit: Si queremos que nuestro elemento here posición del padre.
+    *Left, top, right y bottom: Podemos mover a los elementos que tengan como posición al
+    absolute, relative, fixed o sticky a donde quéramos.
+
+    El Z-index es un tercer eje perpendicular a la pantalla que apila los elementos uno
+    encima de otro según se requiera. Un elemento hijo nunca va a estar sobre un elemento 
+    padre, sin importar su z-index.
+    }}}

@@ -1,0 +1,15 @@
+## 2. Motores de render ## {{{
+    Hacen el trabajo pesado de trasladar el código a pixeles en pantalla:
+        Chrome -> Blink
+        Edge -> Edge html
+        Safari -> Webkit
+        Firefox -> Gecko
+
+    1. Pasa los archivos de HTML a objetos (El DOM). Esto para que el navegador pueda
+    entenderlo.
+    2. Calcula el estilo correspondiente a cada nodo en el DOM.
+    3. Calcula las dimensiones de cada nodo y va a empezar a estructurar la página web.
+    4. Pinta las diferentes cajas.
+    5. Toma las capas y las convierte en una imagen, para finalmente mostrar esta imagen
+    en la pantalla.
+     }}}

@@ -1,0 +1,13 @@
+## 8. Flujo de trabajo básico en un repositorio remoto ## {{{
+    git fetch: Crea una rama con las actualizaciones del remoto.
+
+    git pull: Actualiza repositorio local con remoto.
+
+    Git init crea dos conceptos nuevos, el staging y el repositorio local.
+
+    *Flujo local
+        Directorio ---git add---> staging ---git commit---> local.
+
+    *Flujo remoto
+        Remoto ---git clone---> directorio ---flujo local---> git push ---> Remoto.
+}}}

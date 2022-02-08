@@ -1,0 +1,8 @@
+## 20. Position ## {{{
+    Indica la posición del elemento, hay diversos tipos.
+        - Static: Mantienen su posición (genera scroll), position por defecto.
+        - Absolute: La posición depende de la pantalla.
+        - Relative: La posición depende del padre.
+        - Fixed: Se mantiene fijo (aunque haya scroll).
+        -Sticky: Se queda fixed una vez entra en pantalla.
+}}}

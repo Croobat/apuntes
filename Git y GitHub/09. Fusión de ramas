@@ -1,0 +1,25 @@
+## 9. Fusión de ramas ## {{{
+    git merge <rama>:
+        Fusiona la rama actual con <ramas>.
+
+    git mergetool:
+        Arranca la herramienta visual en consola para resolver conflictos.
+
+    git merge --abort:
+        Aborta la fusión en proceso (si no se pueden resolver los conflictos de momento).
+
+    git reset --merge HEAD:
+        Comando de emergencia si hacemos un merge de accidente.
+
+    Un merge es un commit, se debe hacer checkout a la rama a la que se quiere. Si en
+    ambas ramas se hicieron cambios git genera un conflicto que se debe resolver.
+
+    * Conflictos:
+   <====== HEAD
+        *MI CÓDIGO
+   =======
+        *CÓDIGO ORIGINAL
+   ======> <RAMA>
+
+   Una vez resueltos los conflictos hacer otro git add git commit (o git commit -am "nota").
+}}}

@@ -1,0 +1,21 @@
+## 23. Fuentes ## {{{
+    Fuentes genéricas: Vienen por default en la máquina.
+        - serif: Tienen una pequeña puntita al final, parecen antiguas (TNR, Georgia).
+        - sans-serif: Sin puntita, planas, parecen modernas (Helvetica, Verdana).
+        - cursive: Letra cursiva (dancing script, etc.).
+        - monospace: Cada letra ocupa el mismo espacio (roboto mono, jetbrains mono).
+
+    La mejor práctica es no importar las fuentes en los estilos, sino enlazarlas con link
+    al head.
+
+    Se recomienda además solo cargar una fuente por proyecto.
+
+    Según conceptos de diseño hay varias recomendaciones para elegir la fuente / tipografía:
+
+    Para textos en digital (Como páginas web) usamos fuente sans-serif sin esas terminaciones
+    (setifas).
+    Las fuentes con Serifa se recomiendan para impresas o en digital para titulos.
+    Para calcular el interlineado usamos la siguiente regla:
+
+    “2 puntos más que la fuente (Fuente de 8px pues interlineado de 10px)”.
+}}}

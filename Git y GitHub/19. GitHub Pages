@@ -1,0 +1,5 @@
+## 19. GitHub Pages ## {{{
+    Es un servidor gratuito de github para compartir páginas web. Únicamente se necesita
+    que el repo tenga un index.html y que el repositorio tenga cierto nombre para que
+    aparezca bien en la barra de búsqueda, por ejemplo Croobat.github.io.
+}}}

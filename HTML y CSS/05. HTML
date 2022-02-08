@@ -1,0 +1,17 @@
+## 1. HTML ## {{{
+    - HTML (Hypertext Markup Language): El esqueleto de la página, monta la estructura del
+    contenido.
+
+    Anatomía de una página web:
+    Main container
+----------------------------
+    Logo    Header          |
+            Navigation      |
+                            |
+    Main content  Sidebar   |
+                            |
+        Footer              |
+----------------------------
+}}}
+
+

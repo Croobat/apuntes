@@ -1,0 +1,13 @@
+## 1. Qué es Git ## {{{
+    - Git es un sistema de control de versiones utilizado para mantener un historial de los 
+    cambios que hay en un repositorio. Es mucho mejor que mantener copias completas cada
+    vez que se hace un cambio nuevo. Básicamente funciona como una línea de tiempo 
+    reversible del desarrollo del proyecto.
+    ¿Dónde hubo cambios? ¿Cuándo ocurrieron? ¿Quién lo hizo?
+    Los cambios pueden encontrarse en un repositorio local (como la PC) o uno remoto 
+    (como GitHub).
+    Cabe destacar que git se especializa en archivos de texto plano.
+
+    - Github es una plataforma pseudo-red social en la nube donde se utiliza Git para hacer
+    trabajos colaborativos.
+}}}

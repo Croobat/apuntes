@@ -1,0 +1,10 @@
+## 06. Scope ## {{{
+    Variables globales: Pueden ser accedidas desde un scope local o global. las variables
+    globales son definidas fuera de las funciones (Scope global).
+
+    Scope local: Son aquellas variables definidas dentro del cuerpo de la funcion, estas son
+    solo accedidas desde dentro de la misma funcion.
+
+    Scope Global: Variables que pueden ser accedidas y procesadas por cualquier funcion dentro
+    del codigo.
+}}}

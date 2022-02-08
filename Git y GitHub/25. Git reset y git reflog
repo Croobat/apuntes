@@ -1,0 +1,15 @@
+## 25. Git reset y git reflog ## {{{
+    git reflog:
+        Ver registros de emergencia.
+
+    git checkout <ref>:
+        Mueve al exacto commit de referencia sin hacer cambios.
+
+    git reset --hard eff544f:
+        Hara que el último commit sea el pasado por la ref especificada.
+
+    Git guarda todos los cambios, normalmente solo se trabaja con la punta, al borrar un
+    cambio solo se actualiza la punta del branch, si se necesita aún más información
+    existen los registros de referencia llamados reflogs. Estos se gestionan con hashes
+    de referencia (ref) que apuntan a cada commit.
+}}}

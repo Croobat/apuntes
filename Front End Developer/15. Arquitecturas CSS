@@ -1,0 +1,27 @@
+## 15. Arquitecturas CSS ## {{{
+    Las arquitecturas CSS nos ayudan a mantener un orden durante todo el proyecto, deben ser:
+        - Predecibles: escribir reglas claras.
+        - Reutilizable: no escribir código redundante.
+        - Mantenible: que sea fácil de leer y adaptable a los estándares.
+        - Escalable: que pueda crecer fácilmente sin afectar el rendimiento.
+
+    Para ello se deben establecer reglas, una estructura base, estándares de codificación,
+    evitar largas hojas de estilo y usar documentación.
+
+       - OOCSS: Separar la estructura y la piel, separar el contenedor del contenido. Se tienen 
+       objetos como estructuras principales y se les aplicarán determinadas máscaras (elementos 
+       visuales iguales).
+
+       - BEM: Dividimos entre elemento, bloque y modificador.
+
+       - SMACSS: Nos permite estructuras diferentes componentes en diferentes carpetas, se pueden 
+       tener carpetas de elementos base (botones, etc.), layout, modulos (lo que encapsula los 
+       elementos base), estados (hoovered, clicked, active, etc.) y temas (light, dark, etc.).
+
+       - ITCSS: Triángulo Invertido de CSS, separa entre especificidad, magnitud y claridad 
+       (a ajustes, herramientas, elementos,etc).
+
+       - Atomic Design: Se tienen los elementos más pequeños como átomos (inputs, botones, 
+       etc.), moléculas como grupos de átomos (input con botón, etc.) y finalmente organismos 
+       como grupos de moléculas (un formulario completo por ejemplo).
+    }}}

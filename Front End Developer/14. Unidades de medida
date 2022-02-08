@@ -1,0 +1,19 @@
+## 14. Unidades de medida ## {{{
+    Existen dos categorías de medición, medidas absolutas y medidas relativas. Las medidas
+    absolutas miden lo mismo sin importar el tamaño de la pantalla (como los píxeles px o
+    los puntos pt en el caso de las fuentes).
+    Las medidas relativas cambian en relación al dispositivo que se use y otros factores,
+    pueden ser:
+        - Porcentuales:
+        - Element (em): Toma el tamaño de fuente del padre directo. El default son 16px,
+        de la etiqueta html.
+        - Root element (rem): Siempre va a tener referencia o correlación con el estilo de
+        la etiqueta root o el root de proyecto (la etiqueta html).
+        - Max-width, max-height, min-width, min-height: Estas varían dependiendo del tamaño
+        de la pantalla.
+
+    El diseño responsivo es la manera de hacer que nuestra página se vea bien en varias 
+    medidas de pantalla. Esto se comunica con media queries.
+    @media (max-width: 100px) {}       -> Cuando el máximo de la pantalla llegue a 100px se
+    cambian determinados estilos de la página.
+    }}}

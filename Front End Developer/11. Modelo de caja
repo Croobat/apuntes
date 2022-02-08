@@ -1,0 +1,11 @@
+## 11. Modelo de caja ## {{{
+    Todo elemento en HTML es una caja, todas comparten ciertas propiedades:
+    - Contenido: El contenido principal del elemento.
+    - Padding: El espaciado entre la propia caja y su contenido.
+    - Border: El delineado que se le puede dar a la caja.
+    - Margin: Espaciado entre distintos elementos de html.
+
+    NOTA: Los márgenes verticales en CSS se solapan. Esto se conoce como colapso de márgenes,
+    ocurre cuando hay dos elementos bloque adyacentes.
+    No ocurre con flexbox, grid y elementos que no sean bloques.
+     }}}

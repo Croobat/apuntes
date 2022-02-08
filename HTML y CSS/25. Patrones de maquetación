@@ -1,0 +1,19 @@
+## 25. Patrones de maquetación ## {{{
+   - Mostly Fluid:
+       Comienza desde mobile con una serie de elementos en fila, conforme crece
+       la pantalla varios contenedores pueden abarcar una misma fila (normalmente en pantallas
+       grandes o medianas permanece del mismo tamaño, ajustando márgenes).
+
+   - Layout Shifter:
+        Reposicionamiento global de bloques principales para crear un layout diferente.
+
+   - Column Drop:
+        Comenzamos desde mobile en vertical, conforme crece la pantalla los contenedores van
+        subiendo, sea a la línea principal o a la secundaria.
+
+   - Tiny Tweaks: Una única columna con la mayoría del contenido, los cambios pequeños pueden
+   ser modificaciones en el padding, el tamaño de fuente, etc.
+
+   - Off Canvas: Saca de la pantalla elementos despreciables de la página (en pantallas
+   más pequeñas).
+}}}

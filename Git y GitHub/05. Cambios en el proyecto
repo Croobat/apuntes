@@ -1,0 +1,15 @@
+## 5. Cambios en el proyecto ## {{{
+    git show:
+        Muestra cambios en los dos últimos commits de un archivo.
+
+    git diff <viejo> <nuevo>:
+        Compara los dos versiones específicas.
+
+    git log:
+        Muestra IDs de los commit..
+
+    git log --stat:
+        Muestra cambios en bytes de los archivos en cada una de las versiones.
+
+    Al usar git diff se recomienda poner primero el commit viejo, pues vuelve más intuitiva la lectura.
+}}}

@@ -1,0 +1,204 @@
+Front End Developer
+
+## 1. HTML y CSS ## {{{
+    HTML (Hypertext Markup Language): El esqueleto de la página, monta la estructura del contenido.
+    CSS (Cascading Style Sheets): Estilo de la página, monta la estética del contenido.
+    JS (JavaScript): Comportamiento de la página, lenguaje de programación que permite interactuar con el contenido.
+}}}
+
+## 2. Motores de render ## {{{
+    Hacen el trabajo pesado de trasladar el código a pixeles en pantalla:
+        Chrome -> Blink
+        Edge -> Edge html
+        Safari -> Webkit
+        Firefox -> Gecko
+
+    1. Pasa los archivos de HTML a objetos (El DOM). Esto para que el navegador pueda entenderlo.
+    2. Calcula el estilo correspondiente a cada nodo en el DOM.
+    3. Calcula las dimensiones de cada nodo y va a empezar a estructurar la página web.
+    4. Pinta las diferentes cajas.
+    5. Toma las capas y las convierte en una imagen, para finalmente mostrar esta imagen en la pantalla.
+     }}}
+
+## 3. Anatomía del HTML ## {{{
+    Etiqueta: Un elemento de básico de HTML, estas pueden tener atributos.
+    <elemento atributo1="x" atributo2="y"> contenido </cierre de elemento>
+     }}}
+
+## 4. HTML semántico ## {{{
+    Esencialmente, la etiqueta <div> (divisor) nos dará el mismo resultado que otras como <header> o <section>. Sin embargo no se recomienda utilizar pues no tiene significado semántico (pese a hacer lo mismo no significa lo mismo), por tanto es buena práctica evitar su uso, además el código se vuelve difícil de entender.
+     }}}
+
+## 5. Etiquetas HTML populares ## {{{
+    Layout: Header, nav, section, article, aside, footer.
+    Link: a.
+    Text: h1...h6, p, span.
+    Media: img, svg, iframe, video.
+    Form: form, input, label, button.
+    List: ul, li, ol.
+    Como ya se vio, algunas etiquetas tienen significado semántico, otras no <b></b> y <strong></strong> ambas ponen en negritas pero solo la última es semántica, igual con <i></i> y <em></em> para cursivas, <br> hace salto de línea.
+     }}}
+
+## 6. Anatomía de CSS ## {{{
+    Con CCS podemos asignar propiedades a determinado selector.
+    selector {
+        propiedad: valor;
+    }
+     }}}
+
+## 7. Selectores básicos y combinadores ## {{{
+    Selectores básicos:
+     - De tipo:
+        Directamente para etiquetas, recomendado solo para debugging.
+        <etiqueta>
+
+     - De clase:
+        Se especifica una clase para determinado elemento.
+        .elemento
+
+     - De id:
+         Se especifica un id para determinado elemento.
+        #id-de-elemento
+
+     - De Atributo:
+        Se puede estilizar determinado atributo de un elemento.
+        a[href="..."]{...}
+
+     - Universal:
+         Para todo el documento, tiene baja prioridad.
+         * {...}
+
+    Selectores combinadores:
+    - Descendientes:
+        El selector más a la izquierda es el padre, el resto son hijos.
+        El ejemplo indica un selector para las clases "rojo" pero solo si están en un div.
+        div .rojo {}
+
+    - Hijo directo:
+        Similar al descendiente pero debe ser hijo directo, no vale nieto, bisnieto, etc.
+        div > .rojo {}
+
+    - Elemento adyacente:
+        Selecciona elementos bajo la primera etiqueta.
+        El ejemplo indicca un selector para un div que esté bajo otro div
+        div + div {}
+
+    - General de hermanos:
+        Similar al adyacente pero para todos los selectores en el mismo nivel.
+        p ~ p {}
+
+    Los selectores se pueden combinar:
+    div .rojo ~ .azul > p {}
+     }}}
+
+## 8. Tipos de selectiores: pseudoclases y pseudoelementos ## {{{
+    Las pseudoclases indican estados de un elemento (al interactuar con el usuario), se idican con un colon.
+        :active, :focus, :hover, :nth-child(n), :in-range, ":out-of-range"
+
+    Los pseudoelementos son elementos especiales, no necesariamente escritos desde html.
+        ::after, ::before, ::first-letter ::placeholder
+     }}}
+
+## 9. Cascada y especificidad ## {{{
+    Dado que CSS es de cascada, el orden de las reglas importa, el estilo que se aplicará es el último correspondiente al elemento.
+
+Especificidad
+=    x 0 0 0 0   !important
++      x 0 0 0   Estilos en línea
++        x 0 0   #id
++          x 0   Clases, atributos y pseudoclases
++            x   Elementos y pseudo elementos
++            0   selector universal
+
+    Ejemplo:
+    100     #id
+  +   1     h1
+  +   1     ::first-letter
+  ------
+    102 de especificidad
+
+    El estilo que se aplicará será el más específico.
+     }}}
+
+## 10. Displays: Block, inline, inline block, flex y grid ## {{{
+    El display es el tipo de visualización que tienen los elementos.
+    - Inline: La caja mide lo mismo que el contenido. Se pueden usar en textos y en vez de agregar una linea se agregarán adyacentemente.
+        no se puede cambiar su tamaño ni agregar margen.
+
+    - Block: Ocupan toda la pantalla, nuevos elementos se agregan abajo.
+
+    - Inline-block: Mezcla los dos anteriores, elementos que no ocupen toda la pantalla pero puedan tener márgenes.
+
+    - Flex: Permite un layout más responsivo, si un padre tiene display flex sus hijos se comportarán diferente. Para poder usar esta propiedad siempre debemos tener un contenedor. El elemento padre se conoce como flex container mientras que los hijos se conocen como flex items. Esto permite ordenar alinear,cambiar tamaño, etc. El display flex solo se le aplica al contenedor.
+
+    - Grid: Es un arreglo de dos dimensiones en cuadrícula, contrario al flex que se podría considerar unidimensional. Mientras que flexbox se define mayormente en los hijos, grid lo hace en el padre. Finalmente grid es mejor para superponer elementos.
+     }}}
+
+## 11. Modelo de caja ## {{{
+    Todo elemento en HTML es una caja, todas comparten ciertas propiedades:
+    - Contenido: El contenido principal del elemento.
+    - Padding: El espaciado entre la propia caja y su contenido.
+    - Border: El delineado que se le puede dar a la caja.
+    - Margin: Espaciado entre distintos elementos de html.
+
+    NOTA: Los márgenes verticales en CSS se solapan. Esto se conoce como colapso de márgenes, ocurre cuando hay dos elementos bloque adyacentes.
+    No ocurre con flexbox, grid y elementos que no sean bloques.
+     }}}
+
+## 12. Posicionamiento en CSS ## {{{
+    El posicionamiento ayuda a ubicar elementos.
+        - Static: Valor predeterminado, aquí no podemos usar propiedades left, top, right y bottom.
+        - Absolute: El elemento sale de su lugar y el navegador reacomoda, poniendo otro elemento en el lugar de de posición absolute.
+        - Relative: El elemento mantiene su lugar , pero se puede reposicionar a donde se requiera, se usa como contenedor para que elementos absolute lo usen como referencia.
+        - Fixed: Este elemento nos seguirá a todos lados una vez nos topemos con el.
+        - Sticky: Similar al fixed, pero al encontrar otro elemento en su posición este la da lugar a ese elemento.
+        - Initial: Vuelve el position de un elemento a como estaba originalmente.
+        - Inherit: Si queremos que nuestro elemento here posición del padre.
+    *Left, top, right y bottom: Podemos mover a los elementos que tengan como posición al absolute, relative, fixed o sticky a donde quéramos.
+
+    El Z-index es un tercer eje perpendicular a la pantalla que apila los elementos uno encima de otro según se requiera. Un elemento hijo nunca va a estar sobre un elemento padre, sin importar su z-index.
+    }}}
+
+## 13. Propiedades y valores de CSS más usados ## {{{
+    - Layout: Display.
+    - Modelo de caja: Margin, padding, border.
+    - Tamaños: Width, height.
+    - Textos: Font-size, Font-weight, Font-family, Text-align, Color.
+    - Colores de fondo: Background, background-color.
+    }}}
+
+## 14. Unidades de medida ## {{{
+    Existen dos categorías de medición, medidas absolutas y medidas relativas. Las medidas absolutas miden lo mismo sin importar el tamaño de la pantalla (como los píxeles px o los puntos pt en el caso de las fuentes).
+    Las medidas relativas cambian en relación al dispositivo que se use y otros factores, pueden ser:
+        - Porcentuales:
+        - Element (em): Toma el tamaño de fuente del padre directo. El default son 16px, de la etiqueta html.
+        - Root element (rem): Siempre va a tener referencia o correlación con el estilo de la etiqueta root o el root de proyecto (la etiqueta html).
+        - Max-width, max-height, min-width, min-height: Estas varían dependiendo del tamaño de la pantalla.
+
+    El diseño responsivo es la manera de hacer que nuestra página se vea bien en varias medidas de pantalla. Esto se comunica con media queries.
+    @media (max-width: 100px) {}       -> Cuando el máximo de la pantalla llegue a 100px se cambian determinados estilos de la página.
+    }}}
+
+## 15. Arquitecturas CSS ## {{{
+    Las arquitecturas CSS nos ayudan a mantener un orden durante todo el proyecto, deben ser:
+        - Predecibles: escribir reglas claras.
+        - Reutilizable: no escribir código redundante.
+        - Mantenible: que sea fácil de leer y adaptable a los estándares.
+        - Escalable: que pueda crecer fácilmente sin afectar el rendimiento.
+
+    Para ello se deben establecer reglas, una estructura base, estándares de codificación, evitar largas hojas de estilo y usar documentación.
+
+       - OOCSS: Separar la estructura y la piel, separar el contenedor del contenido. Se tienen objetos como estructuras principales y se les aplicarán determinadas máscaras (elementos visuales iguales).
+
+       - BEM: Dividimos entre elemento, bloque y modificador.
+
+       - SMACSS: Nos permite estructuras diferentes componentes en diferentes carpetas, se pueden tener carpetas de elementos base (botones, etc.), layout, modulos (lo que encapsula los elementos base), estados (hoovered, clicked, active, etc.) y temas (light, dark, etc.).
+
+       - ITCSS: Triángulo Invertido de CSS, separa entre especificidad, magnitud y claridad (a ajustes, herramientas, elementos,etc).
+
+       - Atomic Design: Se tienen los elementos más pequeños como átomos (inputs, botones, etc.), moléculas como grupos de átomos (input con botón, etc.) y finalmente organismos como grupos de moléculas (un formulario completo por ejemplo).
+    }}}
+
+## 16. CSS para entrevistas ## {{{
+    Se requieren fundamentos de HTML, CSS y JS. Cosas como layout, displays, inline, block, inline-block, flexbox, css-grid, especificidad, positions.
+    }}}

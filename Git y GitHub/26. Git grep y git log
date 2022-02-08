@@ -1,0 +1,15 @@
+## 26. Git grep y git log ## {{{
+    git grep <word>:
+        Buscar la palabra <word>.
+    git grep -n <word>:
+        Line number de <word>.
+    git grep -c <word>:
+        Número de veces que aparece la palabra <word>.
+    git grep -c “<p>”–> 
+        cuantas veces usé la etiqueta <p>.
+    git log -S “cabecera” --> cuantas veces use la palabra cabecera en
+    todos los commits.
+
+    grep -–> para los archivos.
+    log --> para los commits.
+}}}

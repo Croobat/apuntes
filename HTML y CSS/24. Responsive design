@@ -1,0 +1,25 @@
+## 24. Responsive Design ## {{{
+    Se debe optimizar para todos los dispositivos. Hay tiene que tener en claro un par de
+    conceptos:
+
+    - Break points: Tamaños de pantalla en los que se va a reacomodar el entorno para
+    reposicionar o redimensionar los contenedores.
+
+    - Media Queries: son condicionales. No es la mejor práctica pero aplicándolo al CSS:
+    @media (min-width: #;) {"código que se aplicará"} y se aplican para cada tamaño de
+    dispositivo. El pixelaje dado será el break point.
+    Si se van a aplicar en la hoja de estilos es buena práctica ponerlos hasta abajo.
+    De ser necesario también se recomienda separar los estilos para cada pantalla
+    (phone.css, tablet.css, desktop.css).
+
+    Mobile first -> Luego tablet -> Finalmente desktop
+    Aplicar media queries de menor a mayor pantalla en el código.
+
+    Para aplicar media queries con buenas prácticas, hay que hacerlo en el header. Porque así
+    solo se descarga el código necesario según el dispositivo, mientras que en CSS se descarga
+    todo sin importar nada.
+
+    En la tag link se colocan los atributos href, rel y, a partir del segundo archivo, el
+    break point media="screen and (min-width: #px". El style.css debe estar hecho para mobile.
+    Luego se pueden crear otros archivos como tablet.css o desktop.css.
+}}}

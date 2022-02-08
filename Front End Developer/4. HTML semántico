@@ -1,0 +1,6 @@
+## 4. HTML semántico ## {{{
+    Esencialmente, la etiqueta <div> (divisor) nos dará el mismo resultado que otras como 
+    <header> o <section>. Sin embargo no se recomienda utilizar pues no tiene significado
+    semántico (pese a hacer lo mismo no significa lo mismo), por tanto es buena práctica
+    evitar su uso, además el código se vuelve difícil de entender.
+     }}}

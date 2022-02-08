@@ -1,0 +1,21 @@
+## 10. Displays: Block, inline, inline block, flex y grid ## {{{
+    El display es el tipo de visualización que tienen los elementos.
+    - Inline: La caja mide lo mismo que el contenido. Se pueden usar en textos y en vez de
+    agregar una linea se agregarán adyacentemente.
+        no se puede cambiar su tamaño ni agregar margen.
+
+    - Block: Ocupan toda la pantalla, nuevos elementos se agregan abajo.
+
+    - Inline-block: Mezcla los dos anteriores, elementos que no ocupen toda la pantalla pero
+    puedan tener márgenes.
+
+    - Flex: Permite un layout más responsivo, si un padre tiene display flex sus hijos se
+    comportarán diferente. Para poder usar esta propiedad siempre debemos tener un contenedor.
+    El elemento padre se conoce como flex container mientras que los hijos se conocen como
+    flex items. Esto permite ordenar alinear,cambiar tamaño, etc. El display flex solo se le
+    aplica al contenedor.
+
+    - Grid: Es un arreglo de dos dimensiones en cuadrícula, contrario al flex que se podría
+    considerar unidimensional. Mientras que flexbox se define mayormente en los hijos, grid
+    lo hace en el padre. Finalmente grid es mejor para superponer elementos.
+     }}}
