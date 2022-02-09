@@ -1,0 +1,12 @@
+## 16. Función constructora ## {{{
+    Será una función dónde podremos crear nuevos objetos mediante parámetros de la función.
+        function auto (marca, modelo, anyo) {
+            this.marca = marca;
+            this.modelo = modelo;
+            this.anyo = anyo;
+        }
+
+    Instanciar nuevo objeto.
+        var autoNuevo = new auto("Tesla", "Model 3", 2020);
+        var autoNuevo2 = new auto("Tesla", "Modelo3", 2018);
+}}}

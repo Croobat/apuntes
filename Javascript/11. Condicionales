@@ -1,0 +1,11 @@
+## 11. Condicionales ## {{{
+    if (condicion) {
+        Si <condicion=true> ejecutar este código
+    }
+    else if (condicion2) {
+        Si no, si <condicion2=true> ejecutar este código
+    }
+    else {
+        Si no, ejecutar este código
+    }
+}}}

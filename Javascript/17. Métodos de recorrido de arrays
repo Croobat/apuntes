@@ -1,0 +1,12 @@
+## 17. Métodos de recorrido de arrays ## {{{
+    map(): crea un nuevo array con los resultados de la llamada a la función indicada
+    aplicados a cada uno de sus elementos.
+
+    find(): Devuelve el primer elemento del array que cumpla con la condición dada.
+
+    foreach(): Ejecuta lo que le definamos una vez por cada elemento de nuestro array.
+
+    some(): Comprueba si al menos un elemento del array cumple con la condición que le damos.
+
+    filter(): Devuelve todos los elementos del array que cumplan con la condición dada.
+}}}
