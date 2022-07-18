@@ -1,0 +1,15 @@
+## 04. Actualizar y eliminar ## {{{
+    outdate
+        Para ver si se encuentran paquetes desactualizados (e indica ultimas versiones)
+
+    update
+        Actualiza paquetes desactualizados.
+
+    install <pkg>@latest
+        Actualiza un paquete a su ultima versión.
+
+    uninstall <pkg>
+        Desinstalar paquete.
+         -- no-save
+             Elimina el paquete de node_modules pero no de package.json
+}}}

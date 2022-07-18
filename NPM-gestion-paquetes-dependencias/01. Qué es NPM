@@ -1,0 +1,12 @@
+## 01. Qué es NPM ## {{{
+    Es un gestor de paquetes, el más popular que tiene JavaScript, donde
+    encontrarás una gran cantidad de recursos para poder implementar en tus
+    proyectos. También vas a poder crear tus propios paquetes y compartirlos
+    con toda la comunidad.
+
+    A la hora de desarrollar una aplicación web es bueno dejar una
+    configuración con datos importantes del proyecto (para uso propio y para)
+    otros desarrolladores.
+
+    npmjs.com
+}}}

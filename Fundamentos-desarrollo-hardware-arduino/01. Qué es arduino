@@ -1,0 +1,139 @@
+## 01. Qué es arduino ## {{{
+    Arduino
+-Es una tarjeta de prototipos flexible para desarrollar proyectos interactivos
+de Hardware.
+-Utiliza un micro controlador Atmel AVT de 8 bits.
+-Tiene un layout especifico, un diseño mecánico específico que permite
+establecer los tipos de conexiones de entrada y salida para usar con la placa.
+-Busca facilitar el trabajo a principiantes en electrónica para aprender basado en
+proyectos.
+-Facilita la posibilidad de programar el micro controlador a través de una
+conexión simple de USB. Esto facilita la programación del set de instrucciones
+para el desarrollo de proyectos.
+
+
+    El bootloader.
+-Es un Software que corre en el micro controlador, permitiendo descargar e
+instalar las instrucciones desarrolladas desde el computador directamente a la
+placa.
+
+
+    Microcontrolador.
+-El cerebro principal del Arduino.
+-Tiene un proposito específico.
+-Cuenta con un CPU, que permite traducir las instrucciones de lenguaje ensamblador
+-Tiene una memoria RAM de tipo SRAM
+-Tiene una memoria permanente de tipo EEPROM. En esta memoria se almacenarán
+las instrucciónes determinadas a través del computador e instaladas gracias al
+boot loader.
+-Tiene un reloj de sistema que determina la velocidad con la que puede resolver
+instrucciones.
+-Tiene periféricos, que son puertos en forma de pines. Estos periféricos en el
+Arduino se dividen en Analógicos y digitales.
+
+
+    Aplicaciones del microcontrolador.
+-Se utilizan en múltiples industrias.
+-Sirven para gestionar la operación de distintos tipos de componentes en
+sistemas superiores.
+-Funcionan tambien como eje central de operacion de sistemas de manofactura
+industrial.
+-Sus posibilidades solo están limitadas por la imaginación.
+-Son programados en lenguaje C.
+
+
+    Ecosistema Arduino
+
+Tipos de tarjetas Arduino
+-Placas de uso general
+-Placas de tamaño reducido (Tarjetas especiales)
+-Shields o extensiones
+-Paquetes o bundles
+-Componentes especiales
+
+Tipos de tarjeta según su uso
+-Nivel inicial
+-Con características mejoradas
+-Para Internet de las cosas
+-Para educación
+-Vestibles (Wearable)
+
+Nivel inicial / De uso general
+-UNO
+-LEONARDO
+-101
+-ESPLORA
+
+Nivel inicial / De tamaño reducido
+-Micro
+-Nano
+-Mini
+
+Nivel Inicial / Shields o extensiones
+-MKRZUNO Adapter
+
+Nivel Inicial / Bundles o paquetes
+-Starter Kit
+
+Nivel Inicial / Componentes especiales
+-LCD Screen
+
+Con características mejoradas / De uso general
+-MEGA
+-Zero
+-DUE
+-Mega ADK
+-M0
+-M0 PRO
+
+Con características mejoradas / De tamaño reducido
+-MKR Zero
+
+Con características mejoradas / Shields o extensiones
+-Motor Shield
+-USB Host Shield
+-Proto shield
+-MKR Proto shield
+-4 Relays shield
+-Mega proto shield
+-MKR Relay prot shield
+
+Con características mejoradas / Componentes especiales
+-ISP
+-USB2Serial Micro
+-USB2Serial Converter
+
+Para Internet de las cosas / De uso general
+-YUN
+-ETHERNET
+-TIAN
+-Industrial 101
+-Leonardo ETH
+-MKR Fox 1200
+-MKR WAN 1300
+-MKR GSM 1400
+
+Para Internet de las cosas / De tamaño reducido
+-MKR1000
+-YUN Mini
+
+Para Internet de las cosas / Shields o extensiones
+-YUN Shield
+-Wireless SD Shield
+-Wireless Proto Shield
+-Ethernet Shield V2
+-GSM Shield V2
+
+Para Internet de las cosas / Bundles o paquetes
+-MKR IoT Bundle
+
+Para educacion / Bundles o paquetes
+-CTC 101
+
+Vestibles o Wearables / De uso general
+-GEMMA
+-LILYPAD Arduino USB
+-LILYPAD Arduino Main Board
+-LILYPAD Arduino Simple
+-LILYPAD Arduino Simple SNAP
+}}}

@@ -3,6 +3,10 @@
     funciones:
         1) Declarativas
         2) De expresión
+
+    Al declarar una función sus entradas se llaman parámetros, al llamarla dichos parámetros
+    se llaman argumentos.
+
     Lo que las diferencia es que a las declarativas se les aplica hoisting, es decir, que
     podemos llamar una función declarativa antes de que sea declarada, la expresión de
     función debe declararse primero.

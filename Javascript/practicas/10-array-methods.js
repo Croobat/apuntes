@@ -17,4 +17,8 @@ var encuentraArticulo = articulos.find(function(articulo){
     
 articulos.forEach(function(articulo){
     console.log(articulo.nombre);
-});
+}); // Ejecuta la funcion para cada articulo en el arreglo
+
+var articulosBaratos = articulos.some(function(articulo) {
+    return articulo.costo <= 700;
+}); // Devuelve booleano según la condición aplicada al arreglo.

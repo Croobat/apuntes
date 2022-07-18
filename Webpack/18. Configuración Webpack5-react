@@ -1,0 +1,12 @@
+## 02. Configuración Webpack 5 ## {{{
+# NPM
+    npm install -D @babel/core @babel/preset-env @babel/preset-react babel-loader
+# YARN
+    yarn add -D @babel/core @babel/preset-env @babel/preset-react babel-loader
+    webpack
+
+# NPM
+    npm install -D webpack webpack-cli webpack-dev-server
+# YARN
+    yarn add -D webpack webpack-cli webpack-dev-server
+}}}

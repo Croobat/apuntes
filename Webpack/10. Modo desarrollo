@@ -1,0 +1,28 @@
+## 10. Modo desarrollo ## {{{
+    Creamos un nuevo archivo:
+    webpack.config.dev.js
+
+    Copiamos todo lo de webpack.config.js a el archivo que acabamos de crear.
+
+    Borramos o comentamos el siguiente código, ya que no necesitamos optimizar para
+    el modo de desarrollo (Queremos ver cuando funcionan las cosas).
+        optimization: {
+            minimize: true,
+            minimizer: [
+                new CssMinimizerPlugin(),
+                new TerserPlugin()
+            ]
+        }
+    También borramos o comentamos por la misma razón:
+    const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+    const TerserPlugin = require('terser-webpack-plugin')
+
+    Seguido del atributo output añadimos:
+    output: {
+    },
+    mode: 'development',
+
+    En package.json:
+    "dev": "webpack --config webpack.config.dev.js"
+    y ejecutamos npm run dev
+}}}

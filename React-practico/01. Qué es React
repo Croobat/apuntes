@@ -1,0 +1,17 @@
+## 01. Qué es React.js ## {{{
+    Es una librería open source de JavaScript para desarrollar interfaces de
+    usuario. Fue lanzada en el año 2013 y desarrollada por Facebook, quienes
+    también la mantienen actualmente junto a una comunidad de desarrolladores
+    independientes y compañías.
+
+    Hoy en día muchas empresas de primer nivel utilizan React para el desarrollo de
+    sus aplicaciones, y es que entre ellas podemos encontrar Facebook, Instagram y
+    el cliente web de WhastApp (todas propiedad de Facebook), y otras como AirBnb,
+    Uber, Netflix, Twitter, Reddit o Paypal.
+
+    Desde su lanzamiento, su uso ha ido incrementando notablemente, convirtiéndose,
+    a día de hoy, en una de las tecnologías front-end más utilizadas.
+
+    Nos enfocamos en el modelo de vista controlada (o MCV), este se enfoca en las
+    vistas de nuestra aplicación.
+}}}

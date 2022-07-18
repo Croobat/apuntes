@@ -1,0 +1,31 @@
+## 03. Instalación de dependencias ## {{{
+    npm i <pkg>
+        --save y -S
+            Las dependencias se deben instalar en la carpeta raíz del proyecto.
+            Por defecto se instala como dependencia requerida para el proyecto, o sea,
+            el paquete que es necesario para vivir en producción.
+
+        --save-dev y -D
+            Nos permite establecer que paquete que vamos a instalar solo es necesario
+            en nuestro entorno local o el de desarrollo.
+
+        -g
+            Instala un paquete de forma global. Permite poder utilizar este paquete en
+            diferentes proyectos (requieren permisos de admin).
+
+    npm list
+        Lista los paquetes que tiene un proyecto especifico.
+
+    npm install
+    -O
+        Instala de forma opcional un paquete.
+
+    --dry-run
+        Instala en simulacro.
+
+    -f y --force
+        Instala de manera forzada.
+
+    @<version>
+        Instala la versión específica de algún paquete.
+}}}

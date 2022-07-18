@@ -1,0 +1,11 @@
+## 05. Estilos de componentes en React ## {{{
+    En la documentación de Sass desaconsejan usar @import para traer archivos
+    de estilos externos.
+
+    @import //The Sass team discourages the continued use of the @import rule.
+    En cambio recomiendan usar @use, esto evita que variables, mixins,
+    placeholders y funciones sean accesibles de manera global, mejora el tiempo
+    de compilación entre otros problemas que surgen cuando se usa @import.
+
+    @use 'path/for/external/styles';
+}}}

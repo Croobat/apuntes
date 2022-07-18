@@ -1,0 +1,16 @@
+## 05. Símbolos especiales ## {{{
+     - Major: breaking change
+ ^   - Minor: compatibilidad backwards, vieja funcionalidad deprecada pero
+            operativa.
+ ~   - Patch: bugfixes
+
+    Si mantenemos el caret (^) dentro de la configuración del package. json
+    estamos garantizando que cuando nosostros hagamos una actualización o
+    tengamos un cambio a realizar, vamos a actualizar solo los cambios menores
+    y de los parches/bugfixes de este paquete.
+    Segun el símbolo que preceda nuestro paquete en package.json solo permitirá
+    actualizaciones menores (^) o bugfixes (~).
+
+    npm install <pkg> --save-exact | npm install <pkg> -E
+        Instalar dependencia en su versión exacta
+}}}

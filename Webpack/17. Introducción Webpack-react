@@ -1,0 +1,12 @@
+## 01. Introducción ## {{{
+# Descargar el repositorio de Github
+    git clone git@github.com:platzi/curso-webpack-react.git
+# Movernos a la carpeta
+    cd curso-webpack-react
+# Abrir VS Code
+    code .
+# Inicializar npm
+    npm init -y
+# instalar dependencias
+    npm install react react-dom
+}}}

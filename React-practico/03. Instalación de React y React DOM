@@ -1,0 +1,51 @@
+## 03. Instalación de React y React DOM ## {{{
+    NOTA: También podemos usar el comando npx create-react-app <archivo> para
+    crear todo lo siguiente automáticamente.
+
+        Comandos de inicialización
+
+    Creación de la carpeta de trabajo
+    mkdir react-shop
+    cd react-shop
+    Inicializar
+    git init
+    npm init
+    // colocamos datos relevantes al momento de inicializar con git
+    // name: react-shop
+    // description: react-eshop
+    // entry point: src/index.js
+    // author: nombre <correo>
+    // license: MIT
+
+    Instalar dependencias
+    npm intall react react-dom
+    // luego, abrir el proyecto en vscode
+    Crear estructura de carpetas del proyecto
+    mkdir public
+    cd public
+    touch index.html
+    cd ..
+    mkdir src
+    cd src
+    touch index.js
+    mkdir components
+    cd components
+    touch App.jsx
+
+    Importación de react y creación de componentes básicos
+    // en index.js
+    import React from 'react';
+    import ReactDOM from 'react-dom';
+
+    ReactDOM.render(<App />, document.getElementById('app'));
+    // en App.jsx
+    import React from 'react';
+
+    const App = () => {
+        return (
+            <h1>Hola Mundo!</h1>
+        );
+    }
+
+    export default App;
+}}}

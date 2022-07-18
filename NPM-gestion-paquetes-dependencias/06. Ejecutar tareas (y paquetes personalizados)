@@ -1,0 +1,68 @@
+## 06. Ejecutar tareas ## {{{
+    npm run <script-name>
+        Podemos ejecutar nuestros propios scripts con este comando.
+    Ademas si por ejemplo tenemos un paquete llamado build, y uno llamado prebuild
+    siempre se ejecutará primero prebuild al hacer npm run build.
+
+    ######################
+    #  Troubleshooting   #
+    ######################
+
+        Algo común es no tener todos los paquetes necesarios para un proyecto ya
+        comenzado (o tener versiones distintas).
+        Se puede solucionar eliminando node_modules o ejecutando un comando que
+        limpie la caché que pueda haber.
+
+        npm cache
+            clean -f | clean -force
+                Elimina la cache.
+            verify
+                Podremos ver si la cache ha sido eliminada (u que todas nuestras)
+                instalaciones van al servidor de NPM.
+
+        npm audit
+            Para ver vulerabilidades en el proyecto.
+            --json
+                Genera un JSON con información detallada de los paquetes que
+                instalamos.
+            fix
+                Soluciona vulnerabilidades que tengamos en nuestro proyecto.
+                (Actualiza a la ultima versión los paquetes con dependencias)
+                requeridas.
+
+    ###############################
+    #  Probar paquete localmente  #
+    ###############################
+
+    Probar paquete localmente:
+        Con el proyecto configurado podemos ejecutar:
+
+        npm link/unlink
+            Crea un enlace s ímbolico en la carpeta global (.npm-global) que
+            vincula el paquete o proyecto donde se ejecutó el comando. Su
+            nombre será el que tenga el campo "name" de package.json. Se
+            recomienda que inicie con @.
+            Ej: @boogst/<proyect-name>
+
+            "@boogst/<proyect-name"
+            Para usar referenciar el paquete anterior en un nuevo proyecto.
+
+    ##############################
+    #  Publicar nuestro paquete  #
+    ##############################
+
+    npm adduser
+        Agregar usuario de NPM
+
+    npm login
+        Iniciar sesión
+
+    npm publish
+        Publicar proyecto en NPM (debe estar en la raíz del proyecto).
+
+    num unpublish -f
+        Fuerza la cancelación de un paquete publicado.
+
+    npm version <major | minor | patch>
+        Actualiza la versión de nuestro proyecto/paquete.
+}}}

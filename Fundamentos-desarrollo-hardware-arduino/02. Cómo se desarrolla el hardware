@@ -1,0 +1,39 @@
+## 02. Cómo se desarrolla el hardware ## {{{
+        Creacion de prototipos
+    Desde el diseño hasta la distribucion para el usuario final
+
+        Puntos sobre el desarrollo de Hardware
+    -Objetivos
+    –Decidir que se va a hacer
+    -Diseño
+    –Se define lo electrónico
+    –Se define lo mecánico
+    –Los errores en la etapa de diseño son fatales
+    –Luego de diseñar se prototipa
+    -Pruebas y manufactura
+
+        1. Primero se define el objetivo
+    Luego se escogen los componentes (Los componentes electrónicos y mecánicos)
+    Luego se elige el MSRP (Manufacturer Sugeted Retail Price) esto es el costo de
+    producción
+
+        2. Elección de proveedores
+    ShenZen es una ciudad en china donde fabrican gran parte de los componentes
+    electrónicos del mundo
+    Para latinoamerica
+    DigiKey
+    Newark
+    Mouser Electronics
+
+        3. Diseño Electrónico
+    Implica como estará constituida la circuitería de tu prototipo
+    Se puede hacer analógico en papel
+    Se puede hacer digital con Software de diseño como KiCat del CERN
+
+        4. Diseño Mecánico
+    Se refiere al tamaño físico del prototipo
+    La disposicion de los componentes en la placa
+    Los complementos de acople con elementos externos como bases o gabinetes
+    Por ejemplo, dispositivos que son muy sensibles al ruido electromagnético
+    necesitan elementos que les proteja para funcionar correctamente.
+}}}

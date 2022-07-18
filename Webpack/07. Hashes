@@ -1,0 +1,12 @@
+## 07. Hashes ## {{{
+Los recursos que se guardan en memoria cache suceden cuando el navegador
+entra a un sitio por primera vez detecta los recursos y los guarda. Por
+ello la siguiente vez sera mucho más rápido porque estarán en memoria.
+
+La desventaja esta cuando sacamos una nueva versión, porque tendrán un mismo
+nombre evitando que se descargue los nuevos cambios, por lo tanto, el usuario
+no recibirá los nuevos cambios.
+
+Para que no haya conflictos con la cache una vez que tengamos nuestro proyecto
+en producción es importante darles un hash para cada nueva versión.
+}}}

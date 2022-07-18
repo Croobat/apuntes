@@ -1,0 +1,10 @@
+## 03. Callbacks ## {{{
+    “Es una función que al crearla le pasamos como
+parámetro una segunda función”. Según lo que entiendo, eso no haría referencia
+directamente al callback, sino a la función que recibe como parámetro otra
+función. Una función que recibe otra función como parámetro se le denomina
+función de orden superior (higher-order function).
+
+El callback en este caso sería la función que es pasada como parámetro, mas no la
+función que lo recibe.
+}}}

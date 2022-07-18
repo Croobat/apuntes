@@ -1,0 +1,6 @@
+## 03. Configuración CSS React ## {{{
+#NPM
+    npm install -D mini-css-extract-plugin css-loader style-loader sass sass-loader
+# YARN
+    yarn add -D mini-css-extract-plugin css-loader style-loader sass sass-loader
+}}}

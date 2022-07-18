@@ -1,0 +1,53 @@
+## 06. React Router DOM ## {{{
+        ¿Qué es router en React?
+    Debido a que React es de tipo SPA(Single Page Application), no recarga la
+    página cuando cambiamos de url. Sin embargo, router nos ayuda a crear otra
+    página para poder navegar en nuestra aplicación. Imagina twitter web, cuando
+    das click en un tweet, se abre otra sección donde puedes ver el tweet. Sería un
+    problema que al momento de darle click, no cambie la url, por lo que ese tweet
+    no tiene dirección propia, no se guardaría en tu historial y sería un problema
+    el SEO. Para ello, usamos router, que se encargará de administrar esta
+    situación, donde en el momento que abras el tweet, cambie la URL, pero todavía
+    mantenga ese dinamismo y rapidez de una SPA.
+
+
+        ¿Entonces qué es ReactRouterDOM?
+#Para instalar
+    npm install react-router-dom
+    //import en App.jsx
+    import { BrowserRouter, Switch, Route } from 'react-router-dom';
+    // usaremos esas 3 herramientas
+    ReactRouterDOM te permite implementar enrutado dinámico en la aplicación. Nos
+    facilita pues podemos enrutar nuestra app basada en componentes de la app (como
+    login o recoverypassword).
+
+    const App = () => {
+        return (
+            <BrowserRouter>
+                <Switch>
+                    <Layout>
+                        <Route exact path="/" component={Home} />
+                        <Route exact path="/login" component={Login} />
+                        <Route exact path="recovery-password" component={Recoverypassword} />
+                        <Route component={NotFound} />
+                    </Layout>
+                </Switch>
+            </BrowserRouter>
+        );
+    }
+
+
+        ¿Qué estamos haciendo?
+    BrowserRoute sirve para implementar router en el navegador
+
+    Switch regresa la primera ruta que coincida. En pocas palabras, si estamos en
+    www.platzi.com/contacto , regresará el componente que coincida a este (es
+    decir, el componente que contenga la lógica de contacto). En esta caso, estamos
+    poniendo varios routes dentro de switch, ¿para qué? para que solamente traiga
+    esa misma ruta, y no tenga que buscar más. Como si fuese un condicional switch
+    de javascript efectivamente. Y por ello tenemos un route sin path, que será el
+    valor por defecto.
+
+    Layout solamente renderizará el route que coincida efectivamente con la URL
+    especificada.
+}}}

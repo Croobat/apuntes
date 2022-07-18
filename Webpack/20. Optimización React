@@ -1,0 +1,6 @@
+## 04. Optimización ## {{{
+#NPM
+    npm install -D css-minimizer-webpack-plugin terser-webpack-plugin clean-webpack-plugin
+# YARN
+    yarn add -D css-minimizer-webpack-plugin terser-webpack-plugin clean-webpack-plugin
+}}}

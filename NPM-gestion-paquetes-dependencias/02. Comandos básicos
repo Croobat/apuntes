@@ -1,0 +1,6 @@
+## 02. Comandos básicos ## {{{
+    npm init
+        Crea package.json (-y agrega nuestros valores por default)
+    npm set init.author.email <email>
+        Asigna nuestros datos por default (repetir para name y license)
+}}}

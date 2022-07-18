@@ -1,0 +1,24 @@
+## 11. Modo producción ## {{{
+    <h4>Apuntes</h4>
+Actualmente tenemos el problema de tener varios archivos repetidos los cuales
+se fueron acumulando por compilaciones anteriores.
+Para ello puedes limpiar la carpeta cada vez que hacemos un build, usando clean-webpack-plugin.
+Cabe recalcar que esta característica es mucho más util para la configuración de producción.
+Para instalarlo debes correr el siguiente comando:
+NPM
+
+npm install -D clean-webpack-plugin
+YARN
+
+yarn add -D clean-webpack-plugin
+Para agregarlo a nuestra configuración de webpack agregamos los siguientes cambios a webpack.config.js
+...
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+module.exports = {
+	...
+	plugins: [
+		...
+		new CleanWebpackPlugin()
+	]
+}
+}}}
